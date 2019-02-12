@@ -7,6 +7,7 @@ import Header from './header'
 import Footer from './footer'
 import Menu from './menu'
 import './layout.css'
+import PageProgress from 'react-page-progress'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -30,6 +31,7 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
+        <PageProgress color={'skyblue'} height={5} />
         <Header siteTitle={data.site.siteMetadata.title} />
         <Menu />
         <div
